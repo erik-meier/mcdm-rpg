@@ -1,0 +1,33 @@
+{
+    "Actor": {
+        "types": ["hero", "monster"],
+        "templates": {
+            "resources": {
+                "health": {
+                    "min": -5,
+                    "value": 10,
+                    "max": 10
+                }
+            }
+        },
+        "hero": {
+          "templates": ["resources"],
+          "heroic-resource": {
+            "value": 0,
+            "max": 5
+          }  
+        },
+        "monster": {
+
+        }
+    },
+    "Item": {
+        "types": ["weapon", "spell"],
+        "weapon": {
+
+        },
+        "spell": {
+
+        }
+    }
+}
