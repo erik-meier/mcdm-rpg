@@ -1,0 +1,19 @@
+{
+    "id": "mcdm-rpg",
+    "title": "MCDM RPG",
+    "description": "An implementation of the MCDM RPG",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Erik Meier",
+            "email": "errmeier@gmail.com"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ]
+}
