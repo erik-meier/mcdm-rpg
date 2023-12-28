@@ -2,20 +2,134 @@
     "Actor": {
         "types": ["hero", "monster"],
         "templates": {
-            "resources": {
-                "health": {
-                    "min": -5,
-                    "value": 10,
-                    "max": 10
+            "common": {
+                "abilities": {
+                    "mgt": {
+                        "value": 2
+                    },
+                    "agl": {
+                        "value": 2
+                    },
+                    "end": {
+                        "value": 2
+                    },
+                    "rea": {
+                        "value": 2
+                    },
+                    "inu": {
+                        "value": 2
+                    },
+                    "prs": {
+                        "value": 2
+                    }
+                },
+                "resources": {
+                    "health": {
+                        "min": -30,
+                        "max": null,
+                        "value": 60,
+                        "bloodied": 30
+                    }
+                },
+                "traits": {
+                    "size": 2,
+                    "weight": 3,
+                    "reach": 1,
+                    "grapple-knockback-tn": 10,
+                    "movement": {
+                        "walk": 6,
+                        "burrow": 0,
+                        "climb": 0,
+                        "swim": 0,
+                        "jump": 2,
+                        "crawl": 3,
+                        "fly": 0,
+                        "teleport": 0
+                    }
                 }
             }
         },
         "hero": {
-          "templates": ["resources"],
-          "heroic-resource": {
-            "value": 0,
-            "max": 5
-          }  
+          "templates": ["common"],
+          "resources": {
+            "heroic": {
+                "min": 0,
+                "max": null,
+                "value": 0,
+                "label": ""
+            },
+            "recoveries": {
+                "min": 0,
+                "max": 10,
+                "value": 10,
+                "healing": 20
+            },
+            "victories": {
+                "min": 0,
+                "max": 12,
+                "value": 0
+            }
+          },
+          "details": {
+            "resource-details": "",
+            "victory-benefits": ""
+          },
+          "skills": {
+            "acrobatics": {
+                "value": 0
+            },
+            "athletics": {
+                "value": 0
+            },
+            "charm": {
+                "value": 0
+            },
+            "craft1": {
+                "value": 0,
+                "type": ""
+            },
+            "craft2": {
+                "value": 0,
+                "type": ""
+            },
+            "craft3": {
+                "value": 0,
+                "type": ""
+            },
+            "deceive": {
+                "value": 0
+            },
+            "empathy": {
+                "value": 0
+            },
+            "intimidate": {
+                "value": 0
+            },
+            "knowledge1": {
+                "value": 0,
+                "type": ""
+            },
+            "knowledge2": {
+                "value": 0,
+                "type": ""
+            },
+            "knowledge3": {
+                "value": 0,
+                "type": ""
+            },
+            "notice": {
+                "value": 0
+            },
+            "skulduggery": {
+                "value": 0
+            },
+            "stealth": {
+                "value": 0
+            },
+            "vigor": {
+                "value": 0
+            }
+          }
         },
         "monster": {
 
