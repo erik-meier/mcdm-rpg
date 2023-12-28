@@ -3,7 +3,7 @@
         "types": ["hero", "monster"],
         "templates": {
             "common": {
-                "abilities": {
+                "characteristics": {
                     "mgt": {
                         "value": 2
                     },
