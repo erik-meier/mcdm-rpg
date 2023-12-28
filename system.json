@@ -3,17 +3,25 @@
     "title": "MCDM RPG",
     "description": "An implementation of the MCDM RPG",
     "version": "1.0.0",
+    "license": "LICENSE",
     "authors": [
         {
             "name": "Erik Meier",
             "email": "errmeier@gmail.com"
         }
     ],
+    "esmodules": ["module/simple.js"],
+    "styles": ["styles/simple.css"],
+    "packs": [],
     "languages": [
         {
             "lang": "en",
             "name": "English",
             "path": "lang/en.json"
         }
-    ]
+    ],
+    "gridDistance": 1,
+    "gridUnits": "squares",
+    "primaryTokenAttribute": "health",
+    "secondaryTokenAttribute": "victories"
 }

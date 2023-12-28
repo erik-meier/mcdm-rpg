@@ -71,6 +71,7 @@
             }
           },
           "details": {
+            "biography": "",
             "resource-details": "",
             "victory-benefits": ""
           },
@@ -137,11 +138,16 @@
     },
     "Item": {
         "types": ["weapon", "spell"],
+        "templates": {
+            "common": {
+                "description": ""
+            }   
+        },
         "weapon": {
-
+            "templates": ["common"]
         },
         "spell": {
-
+            "templates": ["common"]
         }
     }
 }
