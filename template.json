@@ -36,10 +36,7 @@
                     "weight": 3,
                     "reach": 1,
                     "grapple-knockback-tn": 10,
-                    "chance-hit": {
-                        "die": 4,
-                        "bonus": 5
-                    },
+                    "chance-hit": "1d4+5",
                     "movement": {
                         "walk": 6,
                         "burrow": 0,
@@ -184,11 +181,7 @@
                 "object": true,
                 "value": 1
             },
-            "damage": {
-                "dice": 2,
-                "die": 6,
-                "bonus": 5
-            },
+            "damage": "2d6+5",
             "effect": "",
             "trigger": "",
             "cost": {

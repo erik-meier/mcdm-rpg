@@ -1,6 +1,6 @@
 /**
- * A simple and flexible system for world-building using an arbitrary collection of character and item attributes
- * Author: Atropos
+ * A system for the MCDM RPG
+ * Author: Erik Meier
  */
 
 // Import Modules
@@ -21,15 +21,6 @@ import { SimpleToken, SimpleTokenDocument } from "./token.js";
  */
 Hooks.once("init", async function() {
   console.log(`Initializing MCDM RPG System`);
-
-  /**
-   * Set an initiative formula for the system. This will be updated later.
-   * @type {String}
-   */
-  CONFIG.Combat.initiative = {
-    formula: "1d20",
-    decimals: 2
-  };
 
   game.mcdmrpg = {
     SimpleActor,
@@ -57,35 +48,6 @@ Hooks.once("init", async function() {
     default: true,
     config: true
   });
-
-  // Register initiative setting.
-  game.settings.register("mcdmrpg", "initFormula", {
-    name: "SETTINGS.SimpleInitFormulaN",
-    hint: "SETTINGS.SimpleInitFormulaL",
-    scope: "world",
-    type: String,
-    default: "1d20",
-    config: true,
-    onChange: formula => _simpleUpdateInit(formula, true)
-  });
-
-  // Retrieve and assign the initiative formula setting.
-  const initFormula = game.settings.get("mcdmrpg", "initFormula");
-  _simpleUpdateInit(initFormula);
-
-  /**
-   * Update the initiative formula.
-   * @param {string} formula - Dice formula to evaluate.
-   * @param {boolean} notify - Whether or not to post nofications.
-   */
-  function _simpleUpdateInit(formula, notify = false) {
-    const isValid = Roll.validate(formula);
-    if ( !isValid ) {
-      if ( notify ) ui.notifications.error(`${game.i18n.localize("SIMPLE.NotifyInitFormulaInvalid")}: ${formula}`);
-      return;
-    }
-    CONFIG.Combat.initiative.formula = formula;
-  }
 
   /**
    * Slugify a string.
