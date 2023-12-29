@@ -5,17 +5,6 @@ import {EntitySheetHelper} from "./helper.js";
  * @extends {Item}
  */
 export class SimpleItem extends Item {
-
-  /** @inheritdoc */
-  prepareDerivedData() {
-    super.prepareDerivedData();
-    this.system.groups = this.system.groups || {};
-    this.system.attributes = this.system.attributes || {};
-    EntitySheetHelper.clampResourceValues(this.system.attributes);
-  }
-
-  /* -------------------------------------------- */
-
   /** @override */
   static async createDialog(data={}, options={}) {
     return EntitySheetHelper.createDialog.call(this, data, options);
@@ -28,6 +17,6 @@ export class SimpleItem extends Item {
    * @type {boolean}
    */
   get isTemplate() {
-    return !!this.getFlag("worldbuilding", "isTemplate");
+    return !!this.getFlag("mcdm-rpg", "isTemplate");
   }
 }

@@ -5,14 +5,6 @@ import { EntitySheetHelper } from "./helper.js";
  * @extends {Actor}
  */
 export class SimpleActor extends Actor {
-
-  /** @inheritdoc */
-  prepareDerivedData() {
-    super.prepareDerivedData();
-  }
-
-  /* -------------------------------------------- */
-
   /** @override */
   static async createDialog(data={}, options={}) {
     return EntitySheetHelper.createDialog.call(this, data, options);
