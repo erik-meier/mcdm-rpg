@@ -1,3 +1,26 @@
 {
-
+    "mcdm-rpg": {
+        "class": {
+            "tactician": "Tactician",
+            "talent": "Talent",
+            "conduit": "Conduit",
+            "fury": "Fury",
+            "shadow": "Shadow"
+        },
+        "ancestry": {
+            "human": "Human",
+            "dwarf": "Dwarf",
+            "orc": "Orc",
+            "highElf": "High Elf",
+            "wodeElf": "Wode Elf"
+        },
+        "characteristic": {
+            "might": "Might",
+            "agility": "Agility",
+            "endurance": "Endurance",
+            "reason": "Reason",
+            "intuition": "Intuition",
+            "presence": "Presence"
+        }
+    }
 }
