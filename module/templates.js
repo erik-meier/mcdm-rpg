@@ -8,8 +8,7 @@ export const preloadHandlebarsTemplates = async function() {
   // Define template paths to load
   const templatePaths = [
     // Attribute list partial.
-    "systems/mcdm-rpg/templates/parts/sheet-attributes.html",
-    "systems/mcdm-rpg/templates/parts/sheet-groups.html"
+    "systems/mcdm-rpg/templates/parts/hero-traits.html"
   ];
 
   // Load the template parts

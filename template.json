@@ -4,30 +4,12 @@
         "templates": {
             "common": {
                 "characteristics": {
-                    "mgt": {
-                        "value": 2,
-                        "label": "Might"
-                    },
-                    "agl": {
-                        "value": 2,
-                        "label": "Agility"
-                    },
-                    "end": {
-                        "value": 2,
-                        "label": "Endurance"
-                    },
-                    "rea": {
-                        "value": 2,
-                        "label": "Reason"
-                    },
-                    "inu": {
-                        "value": 2,
-                        "label": "Intuition"
-                    },
-                    "prs": {
-                        "value": 2,
-                        "label": "Presence"
-                    }
+                    "might": 2,
+                    "agility": 2,
+                    "endurance": 2,
+                    "reason": 2,
+                    "intuition": 2,
+                    "presence": 2
                 },
                 "resources": {
                     "health": {

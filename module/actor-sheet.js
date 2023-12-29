@@ -26,7 +26,7 @@ export class SimpleActorSheet extends ActorSheet {
     const context = await super.getData(options);
 
     const actorData = this.actor.toObject(false)
-    context.data = actorData.system;
+    context.system = actorData.system;
 
     this._prepareItems(context)
     this._prepareCharacterData(context);
