@@ -3,29 +3,17 @@
         "types": ["hero", "monster"],
         "templates": {
             "common": {
-                "abilities": {
-                    "mgt": {
-                        "value": 2
-                    },
-                    "agl": {
-                        "value": 2
-                    },
-                    "end": {
-                        "value": 2
-                    },
-                    "rea": {
-                        "value": 2
-                    },
-                    "inu": {
-                        "value": 2
-                    },
-                    "prs": {
-                        "value": 2
-                    }
+                "characteristics": {
+                    "might": 2,
+                    "agility": 2,
+                    "endurance": 2,
+                    "reason": 2,
+                    "intuition": 2,
+                    "presence": 2
                 },
                 "resources": {
                     "health": {
-                        "min": -30,
+                        "min": 0,
                         "max": null,
                         "value": 60,
                         "bloodied": 30
@@ -36,6 +24,7 @@
                     "weight": 3,
                     "reach": 1,
                     "grapple-knockback-tn": 10,
+                    "chance-hit": "1d4+5",
                     "movement": {
                         "walk": 6,
                         "burrow": 0,
@@ -52,12 +41,6 @@
         "hero": {
           "templates": ["common"],
           "resources": {
-            "heroic": {
-                "min": 0,
-                "max": null,
-                "value": 0,
-                "label": ""
-            },
             "recoveries": {
                 "min": 0,
                 "max": 10,
@@ -71,6 +54,7 @@
             }
           },
           "details": {
+            "notes": "",
             "resource-details": "",
             "victory-benefits": ""
           },
@@ -136,12 +120,72 @@
         }
     },
     "Item": {
-        "types": ["weapon", "spell"],
-        "weapon": {
-
+        "types": ["class", "kit", "ability", "ancestry", "equipment"],
+        "templates": {
+            "common": {
+                "name": ""
+            }   
         },
-        "spell": {
-
+        "class": {
+            "templates": ["common"],
+            "description": "",
+            "heroic-resource": [
+                {
+                    "min": 0,
+                    "max": null,
+                    "value": 0,
+                    "name": ""
+                }
+            ]
+        },
+        "kit": {
+            "templates": ["common"],
+            "type": "",
+            "armor": "",
+            "weapons": [
+                ""
+            ],
+            "area": null,
+            "reach": null,
+            "health": 0,
+            "speed": null,
+            "damage": 0,
+            "range": 0,
+            "resistance-tn": 0
+        },
+        "ability": {
+            "templates": ["common"],
+            "keywords": [
+                ""
+            ],
+            "type": "",
+            "time": "action",
+            "distance": {
+                "type": "melee",
+                "value": 1
+            },
+            "target": {
+                "creature": true,
+                "object": true,
+                "value": 1
+            },
+            "damage": "2d6+5",
+            "effect": "",
+            "trigger": "",
+            "cost": {
+                "value": null,
+                "resource": ""
+            }
+        },
+        "ancestry": {
+            "templates": ["common"],
+            "description": "",
+            "features": [
+                ""
+            ]
+        },
+        "equipment": {
+            "templates": ["common"]
         }
     }
 }
