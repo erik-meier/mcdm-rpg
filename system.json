@@ -13,7 +13,7 @@
             "email": "errmeier@gmail.com"
         }
     ],
-    "esmodules": ["module/mcdm-rpg.js"],
+    "esmodules": ["modules/mcdm-rpg.js"],
     "styles": ["styles/mcdm-rpg.css"],
     "packs": [],
     "languages": [
