@@ -62,5 +62,17 @@
                 {{/each}}
             </ol>
         </div>
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="items">
+            <ul class="characteristics-list">
+                {{#each system.characteristics as |characteristic key|}}
+                <li class="characteristic flexrow">
+                    <label for="system.characteristics.{{key}}.value" class="resource-label">"{{characteristic.label}}"</label>
+                    <input type="text" name="system.characteristics.{{key}}.value" value="{{characteristic.value}}" data-dtype="Number"/>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
     </section>
 </form>

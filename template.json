@@ -5,22 +5,28 @@
             "common": {
                 "characteristics": {
                     "mgt": {
-                        "value": 2
+                        "value": 2,
+                        "label": "Might"
                     },
                     "agl": {
-                        "value": 2
+                        "value": 2,
+                        "label": "Agility"
                     },
                     "end": {
-                        "value": 2
+                        "value": 2,
+                        "label": "Endurance"
                     },
                     "rea": {
-                        "value": 2
+                        "value": 2,
+                        "label": "Reason"
                     },
                     "inu": {
-                        "value": 2
+                        "value": 2,
+                        "label": "Intuition"
                     },
                     "prs": {
-                        "value": 2
+                        "value": 2,
+                        "label": "Presence"
                     }
                 },
                 "resources": {
