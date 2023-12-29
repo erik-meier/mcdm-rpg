@@ -9,7 +9,6 @@ export default class McdmRpgItemSheet extends ItemSheet {
     /* *
     * Override getData method to also get game-specific config
     */
-    @override
     getData() {
         const data = super.getData();
         data.config = CONFIG.game;
