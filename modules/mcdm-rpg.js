@@ -1,4 +1,4 @@
-import {game} from "./config.js";
+import { game } from "./config.js";
 import McdmRpgItemSheet from "./sheets/item-sheet.js";
 
 Hooks.once("init", function() {

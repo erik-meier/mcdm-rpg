@@ -129,14 +129,20 @@
         "class": {
             "templates": ["common"],
             "description": "",
-            "heroic-resource": [
-                {
+            "heroic-resource": {
+                "one": {
+                    "min": 0,
+                    "max": null,
+                    "value": 0,
+                    "name": ""
+                },
+                "two": {
                     "min": 0,
                     "max": null,
                     "value": 0,
                     "name": ""
                 }
-            ]
+            }
         },
         "kit": {
             "templates": ["common"],

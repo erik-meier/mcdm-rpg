@@ -9,7 +9,8 @@
             "presence": "Presence"
         },
         "label": {
-            "heroicResource": "Heroic Resource"
+            "heroic-resource": "Heroic Resource",
+            "description": "Description"
         }
     }
 }
