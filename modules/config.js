@@ -1,5 +1,4 @@
-// String constants. Reference these by the string value,
-// not as object properties
+// Constants
 export const game = {};
 
 game.label = {

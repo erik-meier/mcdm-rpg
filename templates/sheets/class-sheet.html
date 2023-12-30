@@ -1,18 +1,15 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
-        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}"/></h1>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize "mcdm-rpg.label.name" }}"/></h1>
     </header>
-    <div>
-        <span>
-            <h3>{{localize "mcdm-rpg.label.heroic-resource"}}</h3>
-            <input name="item.heroic-resource.one.name" type="text" value="{{item.heroic-resource.one.name}}"/>
-        </span>
-        <span>
-            <h3>{{localize "mcdm-rpg.label.heroic-resource"}}</h3>
-            <input name="item.heroic-resource.two.name" type="text" value="{{item.heroic-resource.two.name}}"/>
-        </span>
+    <div class="flexrow">
+        <h3>{{localize "mcdm-rpg.label.heroic-resource"}}</h3>
+        <input name="system.heroic-resource.one.name" type="text" value="{{item.system.heroic-resource.one.name}}"/>
     </div>
-    <h2>{{localize "mcdm-rpg.label.description"}}</h2>
-    <textarea name="item.description">{{item.description}}</textarea>
+    <div class="flexrow">
+        <h3>{{localize "mcdm-rpg.label.heroic-resource"}}</h3>
+        <input name="system.heroic-resource.two.name" type="text" value="{{item.system.heroic-resource.two.name}}"/>
+    </div>
+    <textarea name="system.description" placeholder="{{localize "mcdm-rpg.label.description"}}">{{item.system.description}}</textarea>
 </form>

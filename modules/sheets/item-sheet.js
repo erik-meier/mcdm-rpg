@@ -5,13 +5,4 @@ export default class McdmRpgItemSheet extends ItemSheet {
     get template() {
         return `systems/mcdm-rpg/templates/sheets/${this.item.type}-sheet.html`;
     }
-
-    /* *
-    * Override getData method to also get game-specific config
-    */
-    getData() {
-        const data = super.getData();
-        data.config = CONFIG.game;
-        return data;
-    }
 }

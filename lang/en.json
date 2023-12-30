@@ -10,7 +10,8 @@
         },
         "label": {
             "heroic-resource": "Heroic Resource",
-            "description": "Description"
+            "description": "Description",
+            "name": "Name"
         }
     }
 }
