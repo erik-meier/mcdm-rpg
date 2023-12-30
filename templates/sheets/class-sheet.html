@@ -3,13 +3,15 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize "mcdm-rpg.label.name" }}"/></h1>
     </header>
-    <div class="flexrow">
-        <h3>{{localize "mcdm-rpg.label.heroic-resource"}}</h3>
-        <input name="system.heroic-resource.one.name" type="text" value="{{item.system.heroic-resource.one.name}}"/>
+    <div class="sheet-content">
+        <div class="flexrow">
+            <h3>{{localize "mcdm-rpg.label.heroic-resource"}}</h3>
+            <input name="system.heroic-resource.one.name" type="text" value="{{item.system.heroic-resource.one.name}}"/>
+        </div>
+        <div class="flexrow">
+            <h3>{{localize "mcdm-rpg.label.heroic-resource"}}</h3>
+            <input name="system.heroic-resource.two.name" type="text" value="{{item.system.heroic-resource.two.name}}"/>
+        </div>
+        {{editor item.system.description target="item.system.description" button=true owner=owner editable=editable}}
     </div>
-    <div class="flexrow">
-        <h3>{{localize "mcdm-rpg.label.heroic-resource"}}</h3>
-        <input name="system.heroic-resource.two.name" type="text" value="{{item.system.heroic-resource.two.name}}"/>
-    </div>
-    <textarea name="system.description" placeholder="{{localize "mcdm-rpg.label.description"}}">{{item.system.description}}</textarea>
 </form>
