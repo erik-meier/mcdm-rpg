@@ -11,6 +11,62 @@
                     "intuition": 2,
                     "presence": 2
                 },
+                "skills": {
+                    "acrobatics": {
+                        "value": 0
+                    },
+                    "athletics": {
+                        "value": 0
+                    },
+                    "charm": {
+                        "value": 0
+                    },
+                    "craft1": {
+                        "value": 0,
+                        "type": ""
+                    },
+                    "craft2": {
+                        "value": 0,
+                        "type": ""
+                    },
+                    "craft3": {
+                        "value": 0,
+                        "type": ""
+                    },
+                    "deceive": {
+                        "value": 0
+                    },
+                    "empathy": {
+                        "value": 0
+                    },
+                    "intimidate": {
+                        "value": 0
+                    },
+                    "knowledge1": {
+                        "value": 0,
+                        "type": ""
+                    },
+                    "knowledge2": {
+                        "value": 0,
+                        "type": ""
+                    },
+                    "knowledge3": {
+                        "value": 0,
+                        "type": ""
+                    },
+                    "notice": {
+                        "value": 0
+                    },
+                    "skulduggery": {
+                        "value": 0
+                    },
+                    "stealth": {
+                        "value": 0
+                    },
+                    "vigor": {
+                        "value": 0
+                    }
+                },
                 "resources": {
                     "health": {
                         "min": 0,
@@ -23,7 +79,6 @@
                     "size": 2,
                     "weight": 3,
                     "reach": 1,
-                    "grapple-knockback-tn": 10,
                     "chance-hit": "1d4+5",
                     "movement": {
                         "walk": 6,
@@ -35,6 +90,9 @@
                         "fly": 0,
                         "teleport": 0
                     }
+                },
+                "details": {
+                    "notes": ""
                 }
             }
         },
@@ -54,65 +112,8 @@
             }
           },
           "details": {
-            "notes": "",
             "resource-details": "",
             "victory-benefits": ""
-          },
-          "skills": {
-            "acrobatics": {
-                "value": 0
-            },
-            "athletics": {
-                "value": 0
-            },
-            "charm": {
-                "value": 0
-            },
-            "craft1": {
-                "value": 0,
-                "type": ""
-            },
-            "craft2": {
-                "value": 0,
-                "type": ""
-            },
-            "craft3": {
-                "value": 0,
-                "type": ""
-            },
-            "deceive": {
-                "value": 0
-            },
-            "empathy": {
-                "value": 0
-            },
-            "intimidate": {
-                "value": 0
-            },
-            "knowledge1": {
-                "value": 0,
-                "type": ""
-            },
-            "knowledge2": {
-                "value": 0,
-                "type": ""
-            },
-            "knowledge3": {
-                "value": 0,
-                "type": ""
-            },
-            "notice": {
-                "value": 0
-            },
-            "skulduggery": {
-                "value": 0
-            },
-            "stealth": {
-                "value": 0
-            },
-            "vigor": {
-                "value": 0
-            }
           }
         },
         "monster": {
